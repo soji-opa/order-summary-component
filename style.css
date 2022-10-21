@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --clr-plblue: hsl(225, 100%, 94%);
+    --clr-brblue: hsl(245, 75%, 52%);
+    --clr-vplblue:hsl(225, 100%, 98%);
+    --clr-dsblue: hsl(224, 23%, 55%);
+    --clr-dkblue: hsl(223, 47%, 23%);
+    --clr-white: hsl(0, 0%, 100%);
+}
+
+body{
+    margin: 0;
+    font-family: 'Red Hat Display', sans-serif;
+    background-color: var(--clr-cream);
+    color: var(--clr-dkblue);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url(./images/pattern-background-desktop.svg);
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+}
+
+
+h1,
+h2 {
+  line-height: 1.1;
+  margin-bottom: 1em;
+}
+
+p {
+  line-height: 1.6;
+  margin-bottom: 1.5em;
+  text-align: center;
+}
+
+main{
+    border-radius: 10px;
+    width: 375px;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+.service--img{
+    border-radius: 10px 10px 0 0;
+}
+
+.service--details{
+    padding: 2em;
+    border-radius: 0 0 10px 10px;
+    background-color: var(--clr-white);
+}
+
+.service--details h2{
+    text-align: center;
+    color: var(--clr-dkblue);
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.service--plan{
+    background-color: var(--clr-dsblue);
+    border-radius: 10px;
+    padding: 1em 0;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+}
+
+.service--plan p {
+    margin: 0;
+}
+
+.service-plan--prices{
+    margin-right: 40px;
+}
+
+.service-plan--prices p:first-of-type{
+    color: var(--clr-dkblue);
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.service-plan--prices p:last-of-type{
+    color: var(--clr-plblue);
+}
+
+a{
+    cursor: pointer;
+    text-decoration: none;
+}
+
+a:hover{
+    color: blueviolet;
+}
+
+button{
+    display: block;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 1em 0;
+    background-color: var(--clr-brblue);
+    color: var(--clr-white);
+    margin-top: 10px;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: var(--clr-dsblue);
+}
+
+.alt-btn{
+    background: none;
+    color: var(--clr-dsblue);
+    box-shadow: none;
+}
+
+.alt-btn:hover{
+    background: none;
+    color: var(--clr-dkblue);
+}
