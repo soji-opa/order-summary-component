@@ -39,6 +39,7 @@ p {
   line-height: 1.6;
   margin-bottom: 1.5em;
   text-align: center;
+  color: var(--clr-dsblue);
 }
 
 main{
@@ -69,7 +70,7 @@ img{
 }
 
 .service--plan{
-    background-color: var(--clr-dsblue);
+    background-color: var(--clr-vplblue);
     border-radius: 10px;
     padding: 1em 0;
     display: flex;
@@ -91,17 +92,14 @@ img{
     font-size: 16px;
 }
 
-.service-plan--prices p:last-of-type{
-    color: var(--clr-plblue);
-}
-
 a{
     cursor: pointer;
-    text-decoration: none;
+    text-decoration: underline;
+    color: var(--clr-brblue);
 }
 
 a:hover{
-    color: blueviolet;
+    text-decoration: none;
 }
 
 button{
